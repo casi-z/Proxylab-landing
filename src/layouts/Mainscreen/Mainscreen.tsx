@@ -3,6 +3,7 @@ import { ReactChild, FC } from 'react'
 import { Box, Button } from '@mui/material'
 import RoundedButton from '../../components/RoundedButton/RoundedButton'
 import { AccessAlarm, ThreeDRotation, PlayArrow } from '@mui/icons-material';
+import Mainscreen__Image from '../Mainscreen__Image/Mainscreen__Image';
 
 
 const { log } = console
@@ -55,9 +56,9 @@ const Mainscreen: FC<MainscreenProps> = ({ children }) => {
 
 
 			<S.Mainscreen__column className='_right'>
-
-
+				<Mainscreen__Image/>
 			</S.Mainscreen__column>
+
 		</S.Mainscreen>
 	)
 }

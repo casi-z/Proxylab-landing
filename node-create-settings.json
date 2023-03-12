@@ -1,5 +1,5 @@
 {
-    "path": "components",
+    "path": "layouts",
     "onPrefix": {
         "default": {
             "files": [
@@ -21,9 +21,9 @@
                         "const #{componentName}: FC<#{componentName}Props> = ({ children }) => {",
                         "",
                         "    return(",
-                        "      <S.#{componentName} className=\"#{componentName}\">",
+                        "      <S._#{componentName} className=\"#{componentName}\">",
                         "         ",
-                        "      </S.#{componentName}>",
+                        "      </S._#{componentName}>",
                         "    )",
                         "}",
                         "export default #{componentName}"
@@ -34,7 +34,7 @@
                     "text": [
                         "import { Box, styled } from '@mui/material'",
                         "",
-                        "export const #{componentName} = styled(Box)(`",
+                        "export const _#{componentName} = styled(Box)(`",
                         "",
                         "    //Write your styles here",
                         "",

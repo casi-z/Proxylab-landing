@@ -13,12 +13,13 @@ const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
 	const theme = useMemo(
 		() => createTheme({
 			palette: {
+				
 				primary: {
 					main: '#FD695A'
 				},
 				secondary: {
 					main: '#150A29',
-					light: '#3D3D3F75'
+					light: '#3D3D3F'
 					
 				}
 			}

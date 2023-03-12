@@ -18,7 +18,9 @@ export const Mainscreen__column = styled(Box)(({ theme }) => `
 		
 	}
 	&._right{
-		background: url(${HappyGirls}) center no-repeat, linear-gradient(65.25deg, rgba(255, 255, 255, 0.49) -1.59%, rgba(255, 255, 255, 0.46) 99.42%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	button{
 		max-width: 200px;
