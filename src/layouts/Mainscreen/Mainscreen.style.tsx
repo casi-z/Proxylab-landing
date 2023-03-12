@@ -48,36 +48,36 @@ export const MainScreen__SelectedText = styled(Box)(({theme}) => `
 	position: relative;
 	display: inline-flex;
 	
-	
-	
-	.circle{
-		width: 10px;
-		height: 10px;
-		position: absolute;
-		border-radius: 50%;
-		background: #41BA77;
-		
-		
-	}
-	#circle-0{
-		top: -8px;
-		left: -8px;
-	}
-	#circle-1{
-		top: -8px;
-		right: -8px;
-	}
-	
-	#circle-2{
-		bottom: -8px;
-		right: -8px;
-	}
-	#circle-3{
-		bottom: -8px;
-		left: -8px;
-	}
-	
 `)
+
+export const Mainscreen__SelectedTextCircle = styled(Box)(`
+	
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	border-radius: 50%;
+	background: #41BA77;
+		
+	&#circle-0{
+		top: -8.5%;
+		left: -2.3%;
+	}
+	&#circle-1{
+		top: -8.5%;
+		right: -2.3%;
+	}
+	
+	&#circle-2{
+		bottom: -8.5%;
+		right: -2.3%;
+	}
+	&#circle-3{
+		bottom: -8.5%;
+		left: -2.3%;
+	}
+
+`)
+
 export const Mainscreen__description = styled(Box)(({ theme }) => `
 	color: ${theme.palette.secondary.light};
 	font-family: 'Manrope';

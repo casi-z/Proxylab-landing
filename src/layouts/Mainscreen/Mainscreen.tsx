@@ -17,7 +17,7 @@ interface MainscreenProps {
 const Mainscreen: FC<MainscreenProps> = ({ children }) => {
 
 	return (
-		<S.Mainscreen className="Mainscreen red">
+		<S.Mainscreen component='section' className="Mainscreen red">
 
 			<S.Mainscreen__column className='_left'>
 				<S.Mainscreen__slogan >
@@ -27,11 +27,13 @@ const Mainscreen: FC<MainscreenProps> = ({ children }) => {
 						{Array.from({ length: 4 })
 
 							.map((elem, index) =>
-								<span
-									className="circle"
+								<S.Mainscreen__SelectedTextCircle
+									component='span'
 									id={`circle-${index}`} key={index}
+
 								/>
-							)
+						)
+							
 						}
 
 					</S.MainScreen__SelectedText>

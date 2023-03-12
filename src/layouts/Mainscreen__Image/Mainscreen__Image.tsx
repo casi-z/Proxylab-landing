@@ -28,7 +28,6 @@ const Mainscreen__Image: FC<Mainscreen__ImageProps> = ({ children }) => {
 		
 		<S.Mainscreen__Image className="Mainscreen__Image">
 			
-			{/* <GoogleIcon/> */}
 			{svgIcons.map((icon, index) =>
 				<SvgIcon id={`Mainscreen__Icon-${index}`} className='Mainscreen__Icon' component={icon} inheritViewBox />
 

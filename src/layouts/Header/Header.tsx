@@ -15,16 +15,13 @@ interface HeaderProps {
 const Header: FC<HeaderProps> = ({ children }) => {
 
 	return (
-		<header>
-			<S.Header className="Header">
-				<Logo>Proxylab</Logo>
-				<Menu />
-				<RoundedButton>Contact Us</RoundedButton>
-			</S.Header>
-			
-			
-			
-		</header>
+
+		<S.Header component='header' className="Header">
+			<Logo>Proxylab</Logo>
+			<Menu />
+			<RoundedButton>Contact Us</RoundedButton>
+		</S.Header>
+
 	)
 }
 export default Header
